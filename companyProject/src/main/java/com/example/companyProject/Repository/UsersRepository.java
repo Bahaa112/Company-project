@@ -70,6 +70,13 @@ public interface UsersRepository extends JpaRepository<Users, Integer> {
     @Query(value = "UPDATE users SET isDeleted = true WHERE companyid = :companyId", nativeQuery = true)
     void markUsersDeletedByCompanyId(@Param("companyId") int companyId);
 
+    @Modifying
+    @Transactional
+    @Query(value = "update users set password=:password where email=:email;",nativeQuery = true)
+    void updatePassword(String email,String password);
+
+
+
 
 
 

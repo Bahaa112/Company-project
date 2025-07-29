@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.util.Date;
-/*
+
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
@@ -23,4 +23,3 @@ public class ForgotPassword {
     private Users users;
 
 }
-*/

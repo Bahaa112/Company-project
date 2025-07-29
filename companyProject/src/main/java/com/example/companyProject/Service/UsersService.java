@@ -1,10 +1,7 @@
 package com.example.companyProject.Service;
 
 import com.example.companyProject.Controller.Exception.BadRequestException;
-import com.example.companyProject.DTO.CompanyDTO;
 import com.example.companyProject.DTO.LoginReturnDTO;
-import com.example.companyProject.DTO.UserDTO;
-import com.example.companyProject.Entity.Company;
 import com.example.companyProject.Entity.MyUserDetails;
 import com.example.companyProject.Entity.Users;
 import com.example.companyProject.Enums.UserStatus;
@@ -22,8 +19,6 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
-import org.springframework.util.StringUtils;
-
 @Service
 @RequiredArgsConstructor
 

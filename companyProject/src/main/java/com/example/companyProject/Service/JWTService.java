@@ -3,14 +3,11 @@ package com.example.companyProject.Service;
 
 import com.example.companyProject.Entity.MyUserDetails;
 import com.example.companyProject.Entity.Users;
-import com.example.companyProject.Repository.UsersRepository;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
-import org.apache.catalina.User;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.stereotype.Service;
 
