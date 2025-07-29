@@ -4,7 +4,6 @@ import com.example.companyProject.Entity.MyUserDetails;
 import com.example.companyProject.Entity.Users;
 import com.example.companyProject.Repository.UsersRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
