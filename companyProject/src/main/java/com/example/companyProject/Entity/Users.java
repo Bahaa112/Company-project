@@ -13,6 +13,7 @@ import java.util.Date;
 @Entity
 @SQLDelete(sql = "UPDATE users SET isDeleted = true WHERE id = ?")
 @Where(clause = "isDeleted = false")
+@Table(name = "users")
 public class Users {
     @Id
     private int id;
