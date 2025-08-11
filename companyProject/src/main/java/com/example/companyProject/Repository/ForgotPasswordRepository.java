@@ -10,6 +10,7 @@ import java.util.List;
 public interface ForgotPasswordRepository extends JpaRepository<ForgotPassword,Integer> {
 
     List<ForgotPassword> findByOtpAndUsers(Integer otp, Users users);
+    List<ForgotPassword> findByUsers(Users users);
 }
 
 

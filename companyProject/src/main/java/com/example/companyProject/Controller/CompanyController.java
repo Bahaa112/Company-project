@@ -41,18 +41,18 @@ public class CompanyController implements CompanyControllerInterface {
         return companyService.searchCompaniesByCompanyName(companyName);
     }
 
-    @GetMapping("/Users-count")
+    @GetMapping("/users-count")
     public List<CompanyUsersCount> countUsersByCompany(){
         return companyService.countUsersByCompany();
     }
 
-    @GetMapping("/List")
+    @GetMapping("/list")
     public List<CompanyListAndusers> companiesAndUsers(){
         return companyService.companiesAndUsers();
     }
 
-    @PutMapping("/{id}/{status}")
-    public void updateStatus(@PathVariable int id,@PathVariable CompanyStatus status){
+    @PutMapping("/{id}")
+    public void updateStatus(@PathVariable int id,@RequestParam CompanyStatus status){
         companyService.updateStatus(id,status);
     }
     @GetMapping("/counts")

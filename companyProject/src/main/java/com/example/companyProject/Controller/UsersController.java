@@ -21,15 +21,15 @@ public class UsersController {
         return usersService.getAllUsersBy(name , status,pageable );
     }
     @DeleteMapping("/{id}")
-    public void deleteByName(@PathVariable int id){
+    public void deleteById(@PathVariable int id){
         usersService.deleteById(id);
     }
     @PutMapping
     public void updateUser(@RequestBody Users user){
         usersService.updateUser(user.getEmail(), user.getName(), user.getPassword());
     }
-    @PutMapping("/{id}/{status}")
-    public void updateStatus(@PathVariable int id,@PathVariable UserStatus status){
+    @PutMapping("/{id}")
+    public void updateStatus(@PathVariable int id,@RequestParam UserStatus status){
         usersService.updateStatus(id,status);
     }
 }

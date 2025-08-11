@@ -7,4 +7,6 @@ public class ChangePassword {
 
     private String password;
     private String repeatPassword;
+    private Integer otp;
+
 }
