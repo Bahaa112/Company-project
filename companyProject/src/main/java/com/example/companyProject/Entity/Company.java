@@ -17,6 +17,7 @@ import java.util.List;
 @Entity
 @SQLDelete(sql = "UPDATE company SET isDeleted = true WHERE id = ?")
 @Where(clause = "isDeleted = false")
+@Table(name = "company")
 
 public class Company {
 
