@@ -27,7 +27,7 @@ public class ForgotPasswordService {
     private final RestTemplate restTemplate;
 
 
-    private static final String SYSTEM2_BASE_URL = "http://56.228.82.198:8082/auth";
+    private static final String SYSTEM2_BASE_URL = "http://51.20.191.89:8082/auth";
 
     @Autowired
     public ForgotPasswordService(RestTemplate restTemplate) {
