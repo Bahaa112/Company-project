@@ -20,7 +20,9 @@ public class RegisterationController {
 
     @PostMapping("/login")
     public Object login(@RequestBody Users users){
+        System.out.println("test");
         return usersService.verify(users);
+
     }
 
     @PostMapping("/signUp")
