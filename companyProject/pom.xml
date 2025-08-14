@@ -105,6 +105,14 @@
 			<artifactId>spring-security-web</artifactId>
 			<version>6.5.1</version>
 		</dependency>
+		<dependency>
+			<groupId>io.fabric8</groupId>
+			<artifactId>docker-maven-plugin</artifactId>
+			<version>0.38.0</version>
+		</dependency>
+
+
+
 
 	</dependencies>
 
